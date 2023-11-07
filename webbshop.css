@@ -4,19 +4,6 @@
   padding: 0;
 }
 
-ul li {
-  list-style: none;
-  display: inline-block;
-  float: left;
-}
-
-ul li a {
-  text-decoration: none;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  background-color: #cdc8bf;
-}
-
 body {
   font-family: 'Times New Roman', Times, serif, sans-serif;
   background-color: #ffffff;
@@ -49,6 +36,7 @@ nav ul {
   margin-right: 10cm; /* Flytta korgbilden 1 cm från höger sida */
   margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
 }
+
 /* navigeringen av menyn till slut */
 nav li {
   margin: 0 20px;
@@ -64,44 +52,86 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.content {
+  margin-top: 60px; /* Lägg till valfri marginal här */
+}
+
 .product-table {
   width: 100%;
   border-collapse: collapse;
 }
 
 .product-cell {
-  border: 1px solid #ccc;
-  padding: 30px;
+  border: 0px solid #ffffff;
+  text-align: center; /* Centrera innehållet horisontellt */
 }
 
-.product-cell-center {
-  text-align: center;
-  border: 1px solid #ccc;
-  padding: 30px;
+.product-item {
+  margin-bottom: 20px; /* Lägg till valfri marginal här */
 }
 
 .product-img {
-  width: 200px; /* Ange den önskade bredden här */
-  height: 300; /* Låt höjden anpassas automatiskt för att behålla proportionsförhållandet */
+  width: 400px; /* Ange önskad bredd här */
+  height: 500px; /* Låt höjden anpassas automatiskt för att behålla proportionsförhållandet */
+  max-width: 100%; /* Sätt maximal bredd till 100% av förälderelementet */
+  height: auto; /* Låt höjden justeras automatiskt för att behålla proportionsförhållandet */
 }
-
 
 button {
   background-color: #000000;
   color: white;
-  border: none;
+  border-radius: 50px;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 10px 0;
   cursor: pointer;
 }
 
+/* Hela footer med bakgrundsfärg */
+footer {
+  background-color: #cdc8bf;
+  padding: 30px 30px; /* Lägg till marginal på sidorna */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+/* Logotyp i fotern */
+.footer-logo img {
+  width: 150px;
+}
 
+/* Länkar i fotern */
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
+.footer-links ul li {
+  display: inline;
+  margin-right: 30px;
+}
 
+.footer-links a {
+  text-decoration: none;
+  color: #000000;
+}
 
+/* Sociala medier i fotern */
+.footer-social ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-social ul li {
+  margin-right: 20px;
+}
+
+.footer-social img {
+  width: 50px; /* Här kan du ange önskad bredd för ikonerna */
+}
 
