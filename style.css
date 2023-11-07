@@ -36,7 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 .logo img {
@@ -148,7 +148,7 @@ nav a:hover {
   
   /* Stil för din bannerbild */
   .banner img {
-    max-width: 110%; /* Se till att bilden inte är bredare än förälderens bredd */
+    max-width: 100%; /* Se till att bilden inte är bredare än förälderens bredd */
   }
   section {
     text-align: center; /* Centrera texten horisontellt */
@@ -170,7 +170,7 @@ section p {
 
 /* Ändra färg på h1 */
 section h1 {
-  color: #f1a7d7; /* Ange önskad färg i hexadecimal (t.ex. röd) */
+  color: #292929; /* Ange önskad färg i hexadecimal (t.ex. röd) */
 }
 
 /* Ändra typsnitt för h1 om det behövs */
@@ -183,41 +183,85 @@ section p {
   font-family: 'Times New Roman', Times, serif, sans-serif; /* Återställ typsnittet för p-elementen */
   color: #000000; /* Återställ färgen för p-elementen */
 }
-
-
-/* Footer längst ner på första sidan */
-.footer-menu {
-    background-color: #e5e1d8; /* Ändra bakgrundsfärg efter dina önskemål */
-    color: #000000;
-    text-align: center; /* Centrera texten horisontellt */
-    padding: 10px 0;
+section {
+  text-align: center;
+  max-width: 80%;
+  margin-top: 15px; /* Här lägger du till önskat mellanrum över videon */
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.feature1 {
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 20px; /* Öka paddingen om du vill ha mer utrymme runt texten */
+  text-align: center;
+  width: 90%; /* Ange önskad bredd, till exempel 80% av förälderens bredd */
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
 }
 
-.footer-menu ul {
-    list-style: none;
+
+/* Återställ standardmarginaler och padding för alla element */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.footer-menu li {
-    display: inline;
-    margin: 0 15px;
+/* Stil för hela sidan */
+html, body {
+  height: 100%;
 }
 
-.footer-menu a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 16px;
+/* Stil för fotern */
+.footer {
+  background-color: #cdc8bf;
+  color: #000000;
+  padding: 20px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 20;
 }
 
-.footer-menu a:hover {
-    text-decoration: underline;
-}
-nav ul {
-  list-style: none;
-  text-align: center; /* Centrera horisontellt */
+/* Innehållet i fotern */
+.container {
   display: flex;
-  margin-top: 0cm; /* Flytta korgbilden nedåt med 1 cm */
-  margin-right: 10cm; /* Flytta korgbilden 1 cm från höger sida */
-  margin-bottom: 0cm; /* Flytta korgbilden 1 cm från höger sida */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-  
-  
+
+/* Logotyp i fotern */
+.footer-logo img {
+  width: 150px;
+}
+
+/* Länkar i fotern */
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Sociala medier i fotern */
+.footer-social ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer-social ul li {
+  margin-right: 20px;
+}
+
+.footer-social img {
+  width: 40px;
+}
+

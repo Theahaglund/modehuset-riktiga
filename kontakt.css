@@ -40,7 +40,8 @@
     /* ... Din befintliga CSS-kod ... */
 
 header 
-  background-color: #e5e1d8;
+
+ background-color: #cdc8bf;
   color: #fff;
   padding: 40px;
   margin-bottom: 40px; /* Lägg till en 20px marginal nedåt */
@@ -176,7 +177,7 @@ header
   
   /* Ändra textfärg */
   section p {
-    color: #e5e1d8; /* Ange önskad färg i hexadecimal (t.ex. svart) */
+    color: #cdc8bf;; /* Ange önskad färg i hexadecimal (t.ex. svart) */
   }
   
   /* Ändra färg på h1 */
@@ -198,7 +199,7 @@ header
   
   /* Footer längst ner på första sidan */
   .footer-menu {
-      background-color: #e5e1d8; /* Ändra bakgrundsfärg efter dina önskemål */
+      background-color: #000000; /* Ändra bakgrundsfärg efter dina önskemål */
       color: #000000;
       text-align: center; /* Centrera texten horisontellt */
       padding: 10px 0;
@@ -242,7 +243,7 @@ header
 }
 
 header {
-    background-color: #e5e1d8;
+    background-color: #cdc8bf;;
     color: #fff;
     padding: 10px;
 }
@@ -255,7 +256,7 @@ nav {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #e5e1d8;
+    background-color: #cdc8bf;;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
