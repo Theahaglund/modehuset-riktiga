@@ -39,12 +39,8 @@
     padding: 300px 300px;
     /* ... Din befintliga CSS-kod ... */
 
-header 
 
- background-color: #cdc8bf;
-  color: #fff;
-  padding: 40px;
-  margin-bottom: 40px; /* Lägg till en 20px marginal nedåt */
+
 
 
 /* ... Din befintliga CSS-kod fortsätter ... */
@@ -88,25 +84,6 @@ header
   /* Övrig styling för övriga element som rubriker, länkar, footer, osv. */
   
   
-  /* Produkterna bredvid varandra */
-  .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .product {
-    flex: 1;
-    max-width: 300px;
-    text-align: center;
-    margin: 10px;
-  }
-  
-  .product img {
-    max-width: 100%;
-    height: auto;
-  }
-  /* Produkterna bredvid varandra slut */
   
   /* icon med kundvagn börjar */
   
@@ -130,71 +107,17 @@ header
     }
   
     /* icon med kungvagn slutar */
+
   
-    
-  /* Stil för din banner */
-  .banner {
-    background-image: url("bakgrundsbild.jpg"); /* Ange sökvägen till din bakgrundsbild */
-    background-size: cover; /* Anpassa bakgrundsbilden för att täcka hela området */
-    background-position: center; /* Centrera bakgrundsbilden */
-    text-align: center; /* Centrera innehållet horisontellt */
-    padding: 50px; /* Anpassa avståndet från kanten av banneren */
-  }
-  
-  /* ... Din befintliga CSS-kod ... */
-  
-  /* Stil för din banner */
-  .banner {
-    
-   
-    background-image: url("bakgrundsbild.jpg"); /* Ange sökvägen till din bakgrundsbild */
-      background-size: cover; /* Anpassa bakgrundsbilden för att täcka hela området */
-      background-position: center; /* Centrera bakgrundsbilden */
-      
-      text
-    text-align: center; /* Centrera innehållet horisontellt */
-      
-     
-    padding: 0px; /* Anpassa avståndet från kanten av banneren */
+    .contact-form {
+      margin-bottom: 20px; /* Add a margin at the bottom of the contact form */
+      margin-top: 20px;
     }
-    
-    /* Stil för din bannerbild */
-    .banner img {
-      max-width: 110%; /* Se till att bilden inte är bredare än förälderens bredd */
-    }
-    section {
-      text-align: center; /* Centrera texten horisontellt */
-      max-width: 800px; /* Ange önskad maxbredd */
-      margin: 0 auto; /* Centrera texten i mitten av sidan */
-    }
-    section p {
-      margin-bottom: 30px; /* Lägg till önskat avstånd (till exempel 20px) mellan varje <p>-element */
-    }
-    /* Ändra typsnitt */
-  section p {
-    font-family: 'Times New Roman', Times, serif, sans-serif; /* Ange önskat typsnitt och backup-typsnitt */
+  
+  nav {
+      /* Your existing styles for the menu */
   }
   
-  /* Ändra textfärg */
-  section p {
-    color: #cdc8bf;; /* Ange önskad färg i hexadecimal (t.ex. svart) */
-  }
-  
-  /* Ändra färg på h1 */
-  section h1 {
-    color: #f1a7d7; /* Ange önskad färg i hexadecimal (t.ex. röd) */
-  }
-  
-  /* Ändra typsnitt för h1 om det behövs */
-  section h1 {
-    font-family: "Helvetica", sans-serif; /* Ange önskat typsnitt för h1 */
-  }
-  
-  /* Återställ typsnittet och färgen för andra <p>-element */
-  section p {
-    font-family: 'Times New Roman', Times, serif, sans-serif; /* Återställ typsnittet för p-elementen */
-    color: #000000; /* Återställ färgen för p-elementen */
-  }
   
   
   /* Footer längst ner på första sidan */

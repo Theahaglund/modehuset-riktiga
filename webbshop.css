@@ -38,6 +38,16 @@ nav ul {
 }
 
 /* navigeringen av menyn till slut */
+
+  /* Stil för din bannerbild */
+  .banner {
+    text-align: center; /* Centrera banner horisontellt */
+    margin: 0px 0; /* Lägg till önskat avstånd över och under bannerbilden */
+}
+
+.banner img {
+    max-width: 100%; /* Se till att bilden inte är bredare än förälderens bredd */
+}
 nav li {
   margin: 0 20px;
 }

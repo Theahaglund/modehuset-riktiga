@@ -96,80 +96,111 @@
       margin-right: 1cm; /* Flytta korgbilden 1 cm från höger sida */
   
     }
-  
-    /* icon med kungvagn slutar */
 
-  /* Ditt befintliga CSS */
-
+  /* Stil för din bannerbild */
 .banner {
     text-align: center; /* Centrera banner horisontellt */
-    margin-top: 40px; /* Lägg till önskat mellanrum över banner */
-    margin-bottom: 30px; /* Lägg till önskat mellanrum under banner */
+    margin: 40px 0; /* Lägg till önskat avstånd över och under bannerbilden */
 }
 
 .banner img {
     max-width: 100%; /* Se till att bilden inte är bredare än förälderens bredd */
 }
 
-
-/* Övrig styling för din webbplats */
-/* ... (ditt befintliga CSS) ... */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column; /* Citat och bilder under varandra */
-    align-items: center;
-    justify-content: flex-start; /* Placera innehållet högst upp */
-    height: 100vh;
-    margin: 0;
-}
-
-.content {
-    display: flex;
-    flex-direction: column; /* Citat och bilder under varandra */
-    align-items: center;
-}
-
-.image-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px; /* Avstånd mellan bilderna */
-}
-
-.image {
-    flex: 1; /* Delar utrymme jämnt med citatdelen */
-    padding: 20px; /* Inre utfyllnad för avstånd från kanten */
-}
-
-.image img {
-    max-width: 100px; /* Ange önskad bredd för bilderna (till exempel 100px) */
-    height: auto;
-    border: 2px solid #000000; /* Svart kantlinje */
-    border-radius: 50%; /* Gör bilderna runda */
-}
-
-
-.quote {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.quote p {
-    font-size: 16px;
+section {
     text-align: center; /* Centrera texten horisontellt */
-    margin: 0; /* Tar bort standardmarginalen från <p>-elementet */
+    max-width: 800px; /* Ange önskad maxbredd */
+    margin: 0 auto; /* Centrera texten i mitten av sidan */
+}
+
+section p {
+    margin-bottom: 30px; /* Lägg till önskat avstånd (till exempel 30px) mellan varje <p>-element */
 }
 
 
+    .designers {
+        display: flex;
+        justify-content: space-evenly; /* Placera bilderna jämnt mellanrum */
+        align-items: center; /* Centrera texten vertikalt */
+        margin: 30px; /* Lägg till marginal från sidan */
+        padding: 20px; /* Lägg till inre utfyllnad */
+    }
+    
+    .designer {
+        text-align: center;
+        flex: 1;
+        border: 1px solid #000000; /* Lägg till en grå kantlinje (#808080 är hex-koden för grå färg) */
+        border-radius: 10px; /* Runda hörnen */
+        padding: 20px; /* Lägg till lite utfyllnad */
+        margin: 10px;
+    }
+    
+    .designer img {
+        max-width: 200px; /* Ändra till önskad bredd, till exempel 200px */
+        height: auto; /* Låt höjden justeras automatiskt för att behålla proportionerna */
+        display: block; /* Ta bort den underliggande mellanrummet */
+        margin: 0 auto 10px; /* Lägg till ett mellanrum under bilden */
+    }
+    
+    .designer p {
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    
+      /* Ändra typsnitt */
+section p {
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Ange önskat typsnitt och backup-typsnitt */
+  }
+  
+  /* Ändra textfärg */
+  section p {
+    color: #000000; /* Ange önskad färg i hexadecimal (t.ex. svart) */
+  }
+  
+  /* Ändra färg på h1 */
+  section h1 {
+    color: #292929; /* Ange önskad färg i hexadecimal (t.ex. röd) */
+  }
+  
+  /* Ändra typsnitt för h1 om det behövs */
+  section h1 {
+    font-family: "Helvetica", sans-serif; /* Ange önskat typsnitt för h1 */
+  }
+  
+  /* Återställ typsnittet och färgen för andra <p>-element */
+  section p {
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Återställ typsnittet för p-elementen */
+    color: #000000; /* Återställ färgen för p-elementen */
+  }
+  section {
+    text-align: center;
+    max-width: 80%;
+    margin-top: 15px; /* Här lägger du till önskat mellanrum över videon */
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .feature1 {
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 20px; /* Öka paddingen om du vill ha mer utrymme runt texten */
+    text-align: center;
+    width: 90%; /* Ange önskad bredd, till exempel 80% av förälderens bredd */
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+  }
 
+  .rounded-text-container {
+    background-color: rgb(237, 233, 233); /* Byt ut "beige" mot önskad färgkod */
+    border-radius: 20px;     /* Rundade hörn */
+    padding: 20px;           /* Inre utfyllnad */
+    width: 800px;            /* Bredd (justera efter behov) */
+    margin: 40px auto;       /* Centrera horisontellt och lägg till 20px topp- och bottenmarginal */
+    text-align: center;      /* Centrera texten horisontellt */
+}
 
+  
+  
 
     /* Hela footer med bakgrundsfärg */
 footer {
@@ -183,12 +214,14 @@ footer {
   /* Logotyp i fotern */
   .footer-logo img {
     width: 150px;
+    margin-right: 20px;
   }
   
   /* Länkar i fotern */
   .footer-links ul {
     list-style: none;
     margin: 0;
+    margin-left: 20px;
     padding: 0;
     text-align: center;
   }

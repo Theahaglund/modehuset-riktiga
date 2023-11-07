@@ -163,15 +163,16 @@ section {
   margin-bottom: 10px;
   overflow: hidden;
 }
-.feature1 {
-  background-color: #ffffff;
-  border-radius: 50px;
-  padding: 20px; /* Öka paddingen om du vill ha mer utrymme runt texten */
-  text-align: center;
-  width: 90%; /* Ange önskad bredd, till exempel 80% av förälderens bredd */
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
+
+.rounded-text-container {
+  background-color: rgb(237, 233, 233); /* Byt ut "beige" mot önskad färgkod */
+  border-radius: 20px;     /* Rundade hörn */
+  padding: 20px;           /* Inre utfyllnad */
+  width: 800px;            /* Bredd (justera efter behov) */
+  margin: 40px auto;       /* Centrera horisontellt och lägg till 20px topp- och bottenmarginal */
+  text-align: center;      /* Centrera texten horisontellt */
 }
+
 
 
 /* Återställ standardmarginaler och padding för alla element */
